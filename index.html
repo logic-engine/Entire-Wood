@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Entirewood | Premium Wooden Furniture</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-logo">
+    <div class="wood-spinner"></div>
+    <p>Entirewood</p>
+  </div>
+</div>
+
+<nav id="navbar" class="navbar">
+  <div class="nav-container">
+    <div class="logo"><i class="fas fa-tree"></i><span>Entirewood</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#showcase" class="nav-link">Furniture</a></li>
+      <li><a href="#custom-order" class="nav-link">Custom Order</a></li>
+      <li><a href="#experience" class="nav-link">3D Experience</a></li>
+      <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title fade-up">Crafting Comfort in <span>Every Corner</span></h1>
+    <p class="hero-subtitle fade-up delay-1">Premium wooden furniture, tailored for elegance and durability.</p>
+    <div class="hero-btns fade-up delay-2">
+      <a href="#showcase" class="btn-primary">Explore Furniture <i class="fas fa-arrow-right"></i></a>
+      <a href="https://wa.me/923063228989?text=Hello%20Entirewood!%20I'm%20interested%20in%20your%20premium%20furniture." target="_blank" class="btn-outline">Contact on WhatsApp <i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<section id="showcase" class="showcase section-padding">
+  <div class="container">
+    <div class="section-header fade-up"><h2>Our <span>Signature Collection</span></h2><p>Handcrafted masterpieces from premium timber</p></div>
+    <div class="filter-buttons fade-up delay-1">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Sofas">Sofas</button>
+      <button class="filter-btn" data-filter="Beds">Beds</button>
+      <button class="filter-btn" data-filter="Dining Sets">Dining Sets</button>
+      <button class="filter-btn" data-filter="Wardrobes">Wardrobes</button>
+      <button class="filter-btn" data-filter="Custom Designs">Custom Designs</button>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+  </div>
+</section>
+
+<section id="custom-order" class="custom-order section-padding">
+  <div class="container">
+    <div class="order-wrapper">
+      <div class="order-info fade-right"><h3>Dream Furniture? <span>We Build It.</span></h3><p>Describe your vision — size, wood type, style. Our artisans bring bespoke pieces to life.</p><ul><li><i class="fas fa-ruler-combined"></i> Any dimensions</li><li><i class="fas fa-palette"></i> Premium wood finishes</li><li><i class="fas fa-truck"></i> Delivery across Sindh</li></ul></div>
+      <div class="order-form fade-left"><h4>Request Custom Furniture</h4>
+        <form id="customFurnitureForm">
+          <input type="text" id="custName" placeholder="Your Name" required>
+          <input type="tel" id="custPhone" placeholder="Phone Number" required>
+          <input type="text" id="furnitureType" placeholder="Furniture Type (e.g., Wardrobe, Sofa, Bed)" required>
+          <input type="text" id="size" placeholder="Dimensions / Size (e.g., 6x4 ft)">
+          <textarea id="description" rows="3" placeholder="Describe your custom requirement... (wood type, color, style)" required></textarea>
+          <button type="submit" class="btn-primary whatsapp-send"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="visual-experience section-padding">
+  <div class="container">
+    <div class="section-header fade-up"><h2>Visualize in <span>Your Space</span></h2><p>See how Entirewood furniture transforms interiors</p></div>
+    <div class="room-3d-card fade-up"><div class="room-scene"><div class="parallax-room"></div><div class="furniture-hotspots"><div class="hotspot sofa"><i class="fas fa-couch"></i><span>Modern Sofa</span></div><div class="hotspot bed"><i class="fas fa-bed"></i><span>Luxury Bed</span></div><div class="hotspot table"><i class="fas fa-utensils"></i><span>Dining Set</span></div></div></div><p class="experience-caption">Hover over hotspots — interactive 3D feel. Premium furniture placement inspiration.</p></div>
+  </div>
+</section>
+
+<section class="why-choose section-padding">
+  <div class="container"><div class="section-header fade-up"><h2>Why <span>Entirewood</span></h2><p>Excellence rooted in tradition and innovation</p></div>
+    <div class="features-grid"><div class="feature-card fade-up"><i class="fas fa-leaf"></i><h4>Premium Wood Quality</h4><p>Solid Sheesham, Oak & Teak — sustainable and durable.</p></div>
+    <div class="feature-card fade-up delay-1"><i class="fas fa-pencil-ruler"></i><h4>Custom Designs Available</h4><p>Made-to-order furniture that fits your exact taste.</p></div>
+    <div class="feature-card fade-up delay-2"><i class="fas fa-tags"></i><h4>Affordable Pricing</h4><p>Luxury craftsmanship at honest prices.</p></div>
+    <div class="feature-card fade-up delay-3"><i class="fas fa-hands-helping"></i><h4>Local Craftsmanship</h4><p>Proudly made by skilled artisans of Nawabshah.</p></div></div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials section-padding">
+  <div class="container"><div class="section-header fade-up"><h2>Trusted by <span>Hundreds</span></h2><p>What our customers say about Entirewood</p></div>
+    <div class="testimonial-slider"><div class="slider-container" id="sliderContainer"><div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"The walnut dining table is a masterpiece. Entirewood exceeded expectations!"</p><h4>- Fatima A.</h4><div class="stars">★★★★★</div></div><div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"Custom wardrobe fits perfectly. Excellent craftsmanship and service."</p><h4>- Ahmed R.</h4><div class="stars">★★★★★</div></div><div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"I love my new sofa set — elegant and comfortable. Highly recommended."</p><h4>- Sana K.</h4><div class="stars">★★★★★</div></div><div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"Professional team, premium wood quality. Will order again."</p><h4>- Bilal M.</h4><div class="stars">★★★★★</div></div></div><button class="slider-btn prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button><button class="slider-btn next" id="nextSlide"><i class="fas fa-chevron-right"></i></button></div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section section-padding">
+  <div class="container"><div class="contact-grid"><div class="contact-info fade-right"><h3>Visit Our Showroom</h3><div class="address"><i class="fas fa-map-marker-alt"></i><p>A-5 Rehman City, Qazi Ahmed Road, Nawabshah, Sindh, Pakistan</p></div><div class="contact-detail"><i class="fas fa-phone-alt"></i><p>0306 3228989</p></div><div class="contact-detail"><i class="fas fa-envelope"></i><p>entirewood@gmail.com</p></div><div class="social-mini"><a href="https://wa.me/923063228989" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="tel:+923063228989"><i class="fas fa-phone"></i></a><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="https://www.youtube.com/@theentirewood" target="_blank"><i class="fab fa-youtube"></i></a></div></div><div class="map-wrapper fade-left"><iframe src="https://maps.google.com/maps?q=A-5%20Rehman%20City%2C%20Qazi%20Ahmed%20Road%2C%20Nawabshah%2C%20Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div></div></div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><h3><i class="fas fa-tree"></i> Entirewood</h3><p>Premium wooden furniture, custom interiors & timeless elegance.</p></div><div class="footer-links"><h4>Quick Navigation</h4><ul><li><a href="#home">Home</a></li><li><a href="#showcase">Collection</a></li><li><a href="#custom-order">Custom Order</a></li><li><a href="#contact">Contact</a></li></ul></div><div class="footer-social"><h4>Connect</h4><div class="social-icons"><a href="https://wa.me/923063228989"><i class="fab fa-whatsapp"></i></a><a href="https://www.youtube.com/@theentirewood"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="tel:+923063228989"><i class="fas fa-phone-alt"></i></a></div></div></div><div class="copyright">© 2025 Entirewood — Crafting Comfort in Every Corner. All rights reserved.</div></div></footer>
+
+<div class="floating-actions">
+  <a href="https://wa.me/923063228989" class="float-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span>Chat</span></a>
+  <a href="tel:+923063228989" class="float-btn call"><i class="fas fa-phone-alt"></i><span>Call</span></a>
+  <a href="#" class="float-btn facebook" target="_blank"><i class="fab fa-facebook-f"></i><span>FB</span></a>
+  <a href="https://www.youtube.com/@theentirewood" class="float-btn youtube" target="_blank"><i class="fab fa-youtube"></i><span>YT</span></a>
+</div>
+
+<div id="productModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><div id="modalBody"></div></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
